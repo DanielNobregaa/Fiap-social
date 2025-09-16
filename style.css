@@ -1,0 +1,155 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: var(--bgPrimary);
+    color: var(--text-Color);
+}
+
+:root{
+    --bgPrimary: #08090B;
+    --bgSecondary: #151819;
+    --accent: #ED145B;
+
+    --text-Color: #91A3AD;
+}
+
+.main-header{
+    background-color: var(--bgSecondary);
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    box-shadow: 0px 4px 4px var(--accent), 0px 1px 20px var(--accent);
+}
+
+.main-header > div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-header > span{
+    margin-right: 16px;
+    font-size: 32px;
+
+    transition: color 1s;
+    cursor: pointer;
+}
+
+.main-header > span:hover{
+    color: var(--accent);
+    transform: scale(1.2);
+}
+ 
+
+.post{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    background-color: var(--bgSecondary);
+
+    padding: 10px;
+}
+
+.post > header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post > header > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.post > header > div > span{
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.post > main{
+    margin-top: 10px;
+}
+
+.post > main > p{
+    margin: 10px;
+    padding-left: 20px;
+
+    border-left: 2px solid var(--accent);
+}
+
+.post > main > img{
+    width: calc(100% + 20px);
+    margin-left: -10px;
+}
+
+.categories{
+    display: flex;
+}
+
+.categories > span{
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    background-color: var(--bgPrimary);
+    
+}
+
+footer > h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer > article{
+    margin-bottom: 10px;
+}
+
+article{
+    background-color: var(--bgPrimary);
+    margin-top: 3px;
+    padding: 10px;
+}
+
+article > header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > article > header > div > p{
+    font-weight: bold;
+}
+
+footer > article > main > p{
+    margin: 10px 10px 10px 0px; 
+    padding-left: 20px;
+    border-left: 2px solid var(--accent) ;
+}
+
+.comment{
+    display: flex;
+    font-size: 1;
+}
+
+.comment > p{
+    border: 1px solid var(--accent);
+    width: 100%;
+    padding: 10px;
+}
+
+.comment > span{
+    background-color: var(--accent);
+    font-weight: bold;
+    padding: 10px;
+}
+
